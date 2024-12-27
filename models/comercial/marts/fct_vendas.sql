@@ -13,16 +13,6 @@ with
         select *
         from {{ ref('dim_funcionarios') }}
     )
-
-    , dim_clientes as (
-        select *
-        from {{ ref('dim_clientes') }}
-    )
-
-    , dim_transportadoras as (
-        select *
-        from {{ ref('dim_transportadoras') }}
-    )
-
+    
 select *
 from int_vendas
